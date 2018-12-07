@@ -97,10 +97,13 @@
     <Folder Include="Resources\" />
     <Folder Include="Images\" />
     <Folder Include="DataSources\" />
+    <Folder Include="Cells\" />
+    <Folder Include="Utilities\" />
   </ItemGroup>
   <ItemGroup>
     <InterfaceDefinition Include="LaunchScreen.storyboard" />
     <InterfaceDefinition Include="Main.storyboard" />
+    <InterfaceDefinition Include="Resources\LaunchScreen.xib" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Info.plist" />
@@ -122,6 +125,12 @@
     <Compile Include="HotDogTableViewController.designer.cs">
       <DependentUpon>HotDogTableViewController.cs</DependentUpon>
     </Compile>
+    <Compile Include="Cells\HotDogListCell.cs" />
+    <Compile Include="Utilities\BaseUITableViewController.cs" />
+    <Compile Include="FavoriteTableViewController.cs" />
+    <Compile Include="FavoriteTableViewController.designer.cs">
+      <DependentUpon>FavoriteTableViewController.cs</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\RaysHotDogs.Core\RaysHotDogs.Core.csproj">
@@ -136,6 +145,11 @@
     <BundleResource Include="Images\hotdog4.jpg" />
     <BundleResource Include="Images\hotdog5.jpg" />
     <BundleResource Include="Images\hotdog6.jpg" />
+    <BundleResource Include="Resources\meatloversicon.png" />
+    <BundleResource Include="Resources\meatloversicon%402x.png" />
+    <BundleResource Include="Resources\splash.png" />
+    <BundleResource Include="Resources\veggieloversicon.png" />
+    <BundleResource Include="Resources\veggieloversicon%402x.png" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
 </Project>

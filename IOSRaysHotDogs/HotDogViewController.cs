@@ -11,10 +11,14 @@ namespace IOSRaysHotDogs
 
         public HotDog SelectedHotDog { get; set;}
 
+        public HotDogViewController() : base("HotDogViewController", null)
+        {
+        }
+
         public HotDogViewController (IntPtr handle) : base (handle)
         {
-            HotDogDataService hotDogDataService = new HotDogDataService();
-            SelectedHotDog = hotDogDataService.GetHotDogById(1);
+            //HotDogDataService hotDogDataService = new HotDogDataService();
+            //SelectedHotDog = hotDogDataService.GetHotDogById(1);
         }
 
         public override void ViewDidLoad()
@@ -28,10 +32,13 @@ namespace IOSRaysHotDogs
             {
                 UIAlertView message = new UIAlertView("Ray's Hot Dogs", "Your hot dog(s) was added to the cart.", null, "OK", null);
                 message.Show();
+
+                this.DismissModalViewController(true);
             };
 
             CancelButton.TouchUpInside += (object sender, EventArgs e) =>
             {
+                this.DismissModalViewController(true);
                 UIAlertView message = new UIAlertView("Cancel Order", "Your order is going to be cancelled.", null, "OK", null);
                 message.Show();
             };

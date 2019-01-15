@@ -22,7 +22,7 @@ namespace IOSRaysHotDogs
 
             TableView.Source = datasource;
 
-            this.NavigationItem.Title = "Ray's Hot Dog Menu";
+            this.NavigationItem.Title = "Ray's Super Hot Dog Menu";
 
             //base.ViewDidLoad();
         }

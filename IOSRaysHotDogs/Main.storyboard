@@ -136,12 +136,14 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Create Your Order"/>
                                 <connections>
-                                    <segue id="2313" destination="1680" kind="show"/>
+                                    <segue id="5637" destination="4471" kind="show"/>
                                 </connections>
                             </button>
                         </subviews>
                     </view>
                     <navigationItem title="Welcome To Rays Hot Dog's" id="2238" key="navigationItem"/>
+                    <tabBarItem key="tabBarItem" id="5353" systemItem="mostViewed"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2116" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -174,11 +176,12 @@
                         <segue id="4618" destination="4484" kind="relationship" relationship="viewControllers"/>
                         <segue id="4692" destination="4497" kind="relationship" relationship="viewControllers"/>
                         <segue id="4806" destination="4510" kind="relationship" relationship="viewControllers"/>
+                        <segue id="5354" destination="2114" kind="relationship" relationship="viewControllers"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4475" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2184" y="835"/>
+            <point key="canvasLocation" x="968" y="1316"/>
         </scene>
         <scene sceneID="4483">
             <objects>
@@ -211,7 +214,7 @@
         </scene>
         <scene sceneID="4496">
             <objects>
-                <tableViewController id="4497" sceneMemberID="viewController">
+                <tableViewController id="4497" sceneMemberID="viewController" customClass="MeatLoversTableViewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="4498">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -240,7 +243,7 @@
         </scene>
         <scene sceneID="4509">
             <objects>
-                <tableViewController id="4510" sceneMemberID="viewController">
+                <tableViewController id="4510" sceneMemberID="viewController" customClass="VeggiesLoversTableViewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="4511">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -265,7 +268,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4516" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2732" y="830"/>
+            <point key="canvasLocation" x="2814" y="850"/>
         </scene>
     </scenes>
     <resources>

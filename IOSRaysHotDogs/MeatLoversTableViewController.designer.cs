@@ -11,8 +11,8 @@ using UIKit;
 
 namespace IOSRaysHotDogs
 {
-    [Register ("FavoriteTableViewController")]
-    partial class FavoriteTableViewController
+    [Register ("MeatLoversTableViewController")]
+    partial class MeatLoversTableViewController
     {
         void ReleaseDesignerOutlets ()
         {
